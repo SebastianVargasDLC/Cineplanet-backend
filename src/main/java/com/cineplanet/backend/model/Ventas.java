@@ -11,8 +11,8 @@ public class Ventas {
     
     @Id 
     private ObjectId id;
-    private Cliente cliente;
-    private Pelicula pelicula;
+    private String cliente;
+    private String pelicula;
     private Cine cine;
     private int numeroSala;
     private Date fechaVenta;
@@ -23,54 +23,71 @@ public class Ventas {
     public ObjectId getId() {
         return id;
     }
+
     public void setId(ObjectId id) {
         this.id = id;
     }
-    public Cliente getCliente() {
+
+    public String getCliente() {
         return cliente;
     }
-    public void setCliente(Cliente cliente) {
+
+    public void setCliente(String cliente) {
         this.cliente = cliente;
     }
-    public Pelicula getPelicula() {
+
+    public String getPelicula() {
         return pelicula;
     }
-    public void setPelicula(Pelicula pelicula) {
+
+    public void setPelicula(String pelicula) {
         this.pelicula = pelicula;
     }
+
     public Cine getCine() {
         return cine;
     }
+
     public void setCine(Cine cine) {
         this.cine = cine;
     }
+
     public int getNumeroSala() {
         return numeroSala;
     }
+
     public void setNumeroSala(int numeroSala) {
         this.numeroSala = numeroSala;
     }
+
     public Date getFechaVenta() {
         return fechaVenta;
     }
+
     public void setFechaVenta(Date fechaVenta) {
         this.fechaVenta = fechaVenta;
     }
+
     public Entrada getEntradas() {
         return entradas;
     }
+
     public void setEntradas(Entrada entradas) {
         this.entradas = entradas;
     }
+
     public int getTotal() {
         return total;
     }
+
     public void setTotal(int total) {
         this.total = total;
     }
+
     public String getEstado() {
         return estado;
     }
+
     public void setEstado(String estado) {
         this.estado = estado;
     }

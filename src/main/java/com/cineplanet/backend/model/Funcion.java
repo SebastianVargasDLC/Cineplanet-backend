@@ -13,8 +13,8 @@ public class Funcion {
     @Id
     private ObjectId id;
 
-    private ObjectId peliculaId;
-    private ObjectId cineId;
+    private String pelicula;
+    private String cine;
     private int numeroSala;
     private Date fechaHora;
     private double precio;
@@ -29,20 +29,20 @@ public class Funcion {
         this.id = id;
     }
 
-    public ObjectId getPeliculaId() {
-        return peliculaId;
+    public String getPelicula() {
+        return pelicula;
     }
 
-    public void setPeliculaId(ObjectId peliculaId) {
-        this.peliculaId = peliculaId;
+    public void setPelicula(String pelicula) {
+        this.pelicula = pelicula;
     }
 
-    public ObjectId getCineId() {
-        return cineId;
+    public String getCine() {
+        return cine;
     }
 
-    public void setCineId(ObjectId cineId) {
-        this.cineId = cineId;
+    public void setCine(String cine) {
+        this.cine = cine;
     }
 
     public int getNumeroSala() {
