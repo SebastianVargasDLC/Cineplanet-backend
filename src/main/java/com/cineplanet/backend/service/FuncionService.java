@@ -1,4 +1,4 @@
-﻿package com.cineplanet.backend.service;
+package com.cineplanet.backend.service;
 
 import com.cineplanet.backend.model.Funcion;
 import com.cineplanet.backend.repository.FuncionRepository;
